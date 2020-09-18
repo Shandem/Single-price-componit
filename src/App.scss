@@ -1,0 +1,96 @@
+:root {
+   --main-color: hsl(179, 62%, 43%);
+   --second-color: hsl(71, 73%, 54%);
+   --f: 'Karla', sans-serif;
+   --Bf-size: 16px;
+   --desk-w: 1440px;
+   --mobile-w: 375px;
+ }
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+.App{
+   text-align: left; 
+   margin: auto;
+   width: var(--desk-w);
+   background-color: whitesmoke;
+   font-family: var(--f);
+   height: 800px;
+   background-color: white;
+}
+.card{
+   width: 720px;
+   margin: auto;
+   margin-top: 10vh;
+   box-shadow: -1px 3px 3px 2px rgba(0,0,0,.25);
+   border-radius: 25px;
+   background-color: white;
+}
+.top{
+   background-color: white;
+   border-top-left-radius: 25px;
+   border-top-right-radius: 25px;
+   margin-left: 20px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   
+   
+   h1{
+      color: var(--main-color);
+   }
+   h3{
+      color: var(--second-color);
+   }
+   p{
+      color: slategrey;
+   }
+}
+
+.bottom{
+   color: white;
+   display: flex;
+   flex-direction: row;
+   border-bottom-left-radius: 25px;
+   border-bottom-right-radius: 25px;
+   
+   .left{
+      background-color: var(--main-color);
+      width: 360px;
+      border-bottom-left-radius: 25px;
+      padding-left: 30px;
+      padding-bottom: 30px;
+      padding-top: 20px;
+
+      h1{
+        span{
+            color: whitesmoke;
+      }
+   }
+
+      button{
+         background-color: var(--second-color);
+         border: none;
+         border-radius: 5px;
+         color: white;
+         padding: 15px 105px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 16px;
+      }
+   }
+   .right{
+      background-color: #4ABEBD;
+      width: 360px;
+      border-bottom-right-radius: 25px;
+      padding-left: 20px;
+      padding-bottom: 20px;
+      padding-top: 20px;
+      h3{
+         margin-left: 38px;
+      }
+      ul{
+         list-style: none;
+         color: whitesmoke;
+      }
+   }
+}
